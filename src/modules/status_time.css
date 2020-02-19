@@ -67,5 +67,16 @@
 #listrow_status span[title$ = "(2 Minuten)"],
 #listrow_status span[title$ = "(1 Minuten)"],
 #listrow_status span[title$ = "(wenige Sekunden)"] {
-    text-decoration: blink;
+    /* The 'blink' value for 'text-decoration' is depricated */
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Defines the animation steps for blinking text */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
 }
