@@ -170,11 +170,13 @@
     color: transparent;
 }
 
-#listrow_int ~ .listitemrow b {
+#listrow_int ~ .listitemrow b,
+#listrow_int ~ .listitemrow i {
     word-break: break-word;
 }
 
-#listrow_int ~ .listitemrow b {
+#listrow_int ~ .listitemrow b,
+#listrow_int ~ .listitemrow i {
     font-size: 12px;
     color: #333;
 }
