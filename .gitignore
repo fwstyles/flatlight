@@ -1,0 +1,9 @@
+# Atom Editor
+.atom/
+
+# Node
+node_modules/
+
+# SSL Certificate
+ssl-cert.pem
+ssl-key.pem

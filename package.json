@@ -1,0 +1,20 @@
+{
+  "author": "Sven Lohrmann <malnvenshorn@mailbox.org>",
+  "name": "FlatLight",
+  "description": "Style for freewar.de",
+  "version": "0.0.0",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flatlight/flatlight.github.io.git"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace": "^1.0.0",
+    "http-server": "^0.12.1"
+  }
+}
