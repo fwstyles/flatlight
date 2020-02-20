@@ -4,6 +4,9 @@
 # Node
 node_modules/
 
+# Generated files
+dist/
+
 # SSL Certificate
 ssl-cert.pem
 ssl-key.pem

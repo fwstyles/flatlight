@@ -18,7 +18,7 @@ const paths = {
 }
 
 function clean() {
-    return del(['dist/'])
+    return del(['dist/*'])
 }
 
 function images() {
