@@ -2,15 +2,6 @@
     margin-top: 4px;
 }
 
-#listrow_int ~ .listcaption a {
-    color: #eee;
-}
-
-#listrow_int ~ .listcaption a:hover,
-#listrow_int ~ .listcaption a:focus {
-    color: #fff;
-}
-
 #filterrow {
     padding: 3px;
     background: #ddd;

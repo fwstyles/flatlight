@@ -19,6 +19,15 @@
     border-top: 0;
 }
 
+.frameitembg .listcaption a {
+    color: #eee;
+}
+
+.frameitembg .listcaption a:hover,
+.frameitembg .listcaption a:focus {
+    color: #fff;
+}
+
 .frameitembg .listrow {
     padding: 0 5px;
     min-height: 18px;
