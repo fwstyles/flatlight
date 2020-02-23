@@ -21,6 +21,15 @@
     text-decoration: none;
 }
 
+.framemapbg td {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+/* Not accessible map tiles */
+
 .nocango {
     opacity: .9;
 }
@@ -34,6 +43,8 @@
     opacity: .9;
     background-image: url(images/berg.png) !important;
 }
+
+/* Position text and reload button */
 
 a[href="map.php?reload=1"] {
     position: absolute;
@@ -88,20 +99,20 @@ a[href="map.php?reload=1"] img {
     text-decoration: none;
 }
 
+/* Move target mark to the bottom left of the map tile */
+
+.targetmark text {
+    transform: translate(0px, 30px);
+}
+
+/* Standing time */
+
 #test {
     text-align: center;
     font-size: 9px;
-    color: #000;
+    color: #333;
     width: 242px;
     padding: 3px;
     min-height: 14px;
     margin: 0 auto;
-    color: #333;
-}
-
-.framemapbg td {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    height: 50px;
 }
