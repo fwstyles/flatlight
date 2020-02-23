@@ -46,29 +46,15 @@
 
 /* Position text and reload button */
 
-a[href="map.php?reload=1"] {
-    position: absolute;
-    left: 16px;
-    font-size: 11px;
-}
-
-a[href="map.php?reload=1"]:before {
-    content: "\f021 ";
+a[href="map.php?&reload=1"]:before {
+    content: "\f021";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     color: #eee;
 }
 
-a[href="map.php?reload=1"]:after {
-    content: " Aktualisieren";
-}
-
-a[href="map.php?reload=1"]:hover {
-    text-decoration: none;
-}
-
-a[href="map.php?reload=1"] img {
+a[href="map.php?&reload=1"] img {
     display: none;
 }
 
@@ -87,16 +73,6 @@ a[href="map.php?reload=1"] img {
     background: #2980b9;
     font-weight: bold;
     text-shadow: 0 2px 1px rgba(0, 0, 0, .2);
-}
-
-.positiontext a {
-    color: #eee;
-    text-decoration: none;
-}
-
-.positiontext a:hover {
-    color: #eee;
-    text-decoration: none;
 }
 
 /* Move target mark to the bottom left of the map tile */
