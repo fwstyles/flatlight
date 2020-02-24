@@ -112,9 +112,9 @@
     line-height: 18px;
 }
 
-#listrow_char_mission a:nth-of-type(1),
-#listrow_clan a:nth-of-type(1) {
-    border-right: 1px solid rgba(0, 0, 0, .1);
+#listrow_char_mission a:nth-of-type(2),
+#listrow_clan a:nth-of-type(2) {
+    border-left: 1px solid rgba(0, 0, 0, .1);
 }
 
 #listrow_char_mission a {
@@ -152,9 +152,8 @@
     display: none;
 }
 
-#listrow_clan a[href="fight.php?action=groupjoinrand"]:after {
-    padding-left: 3px;
-    content: " Gruppe";
+#listrow_clan a[href="clanmenu.php?action=groupfinder"]:after {
+    content: "Offene Gruppen";
 }
 
 #listrow_group {
@@ -162,11 +161,21 @@
     z-index: 2;
     right: 6px;
     left: calc(50% + 6px);
-    background: red;
     text-align: center;
     margin-top: -19px;
     background: #eee;
-    border: 0;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    /**
+     * Because of the compressed menu there is not enought space left
+     * for the group find icon behind the text. Therefore we hide it.
+     */
+    font-size: 0;
+    height: 18px; /* Needed, otherwise the box will be to height */
+}
+
+#listrow_group b,
+#listrow_group a {
+    font-size: 12px;
 }
 
 

@@ -264,8 +264,7 @@ img[src$="group2.gif"] {
     display: none;
 }
 
-a[href^="fight.php?action=groupinvite&act_user_id="]:after,
-a[href*="clanmenu.php?action=groupfinder"]:after {
+a[href^="fight.php?action=groupinvite&act_user_id="]:after {
     content: "\f0c0";
 }
 
