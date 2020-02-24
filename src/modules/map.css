@@ -52,6 +52,7 @@ a[href="map.php?&reload=1"]:before {
     font-style: normal;
     font-weight: normal;
     color: #eee;
+    margin-right: 3px;
 }
 
 a[href="map.php?&reload=1"] img {
