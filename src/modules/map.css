@@ -1,95 +1,92 @@
 .framemapbg > table {
-    border: 1px solid rgba(0, 0, 0, .2);
-    padding: 3px;
-    width: auto !important;
-    margin-top: 19px;
-    background: #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  width: auto !important;
+  margin-top: 19px;
+  background: #ccc;
 }
 
 .framemapbg img[src*="zahl"] {
-    opacity: .75;
+  opacity: 0.75;
 }
 
 .framemapbg table a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 0;
-}
-
-.framemapbg table a {
-    text-decoration: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  text-decoration: none;
 }
 
 .framemapbg td {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    height: 50px;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
 
 /* Not accessible map tiles */
 
 .nocango {
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .nocango:hover {
-    background: transparent url(images/nocango.png) left top no-repeat;
-    cursor: default !important;
+  background: transparent url(images/nocango.png) left top no-repeat;
+  cursor: default !important;
 }
 
 .stdjpg {
-    opacity: .9;
-    background-image: url(images/berg.png) !important;
+  opacity: 0.9;
+  background-image: url(images/berg.png) !important;
 }
 
 /* Position text and reload button */
 
-a[href="map.php?&reload=1"]:before {
-    content: "\f021";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    color: #eee;
-    margin-right: 3px;
+a[href="map.php?&reload=1"]::before {
+  content: "\f021";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  color: #eee;
+  margin-right: 3px;
 }
 
 a[href="map.php?&reload=1"] img {
-    display: none;
+  display: none;
 }
 
 .positiontext {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    line-height: 19px;
-    text-align: right;
-    font-size: 11px;
-    color: #eee;
-    padding: 0px 12px 0px 3px;
-    height: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, .2);
-    background: #2980b9;
-    font-weight: bold;
-    text-shadow: 0 2px 1px rgba(0, 0, 0, .2);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  line-height: 19px;
+  text-align: right;
+  font-size: 11px;
+  color: #eee;
+  padding: 0 12px 0 3px;
+  height: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background: #2980b9;
+  font-weight: bold;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* Move target mark to the bottom left of the map tile */
 
 .targetmark text {
-    transform: translate(0px, 30px);
+  transform: translate(0, 30px);
 }
 
 /* Standing time */
 
 #test {
-    text-align: center;
-    font-size: 9px;
-    color: #333;
-    width: 242px;
-    padding: 3px;
-    min-height: 14px;
-    margin: 0 auto;
+  text-align: center;
+  font-size: 9px;
+  color: #333;
+  width: 242px;
+  padding: 3px;
+  min-height: 14px;
+  margin: 0 auto;
 }

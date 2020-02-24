@@ -2,85 +2,83 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
 /*******************************************************************************
- * LightNoise v3.0 - (c) 2014, Cembon
- ******************************************************************************/
+* LightNoise v3.0 - (c) 2014, Cembon
+******************************************************************************/
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    background: #fafafa;
+  background: #fafafa;
 }
 
 body {
-    font-size: 13px;
-    font-family: "Lato", sans-serif;
-    line-height: 1.3;
-    color: #222;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
+  color: #222;
 }
 
 th,
 td {
-    font-size: 13px;
-    font-family: "Lato", sans-serif;
-    line-height: 1.3;
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
 }
 
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    color: #2980b9;
-    font-weight: bold;
-    text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #3498db;
-    text-decoration: none;
+  color: #3498db;
+  text-decoration: none;
 }
 
 a:focus {
-    outline: 0px solid transparent;
+  outline: 0 solid transparent;
 }
 
 a:active {
-    color: #b92201;
+  color: #b92201;
 }
-
 
 /* > Special > Sponsorsterne */
 
 img[src$="sponsor.gif"],
 img[src$="sponsor2.gif"],
 img[src$="sponsor3.gif"] {
-    display: inline-block;
-    width: 0px;
-    height: 10px;
-    background: url(images/sponsor_o.png);
-    background-repeat: no-repeat;
-    padding-left: 11px;
-    overflow: hidden;
-    margin-right: 2px;
+  display: inline-block;
+  width: 0;
+  height: 10px;
+  background: url(images/sponsor_o.png);
+  background-repeat: no-repeat;
+  padding-left: 11px;
+  overflow: hidden;
+  margin-right: 2px;
 }
 
 img[src$="sponsor2.gif"] {
-    background: url(images/sponsor_g.png);
+  background: url(images/sponsor_g.png);
 }
 
 img[src$="sponsor3.gif"] {
-    background: url(images/sponsor_b.png);
+  background: url(images/sponsor_b.png);
 }
-
 
 /* > Special > Buttons */
 
@@ -89,20 +87,20 @@ input[type="submit"],
 .framemapbg br + a[href$="logout.php"] + br + a,
 form[action="friends.php?action=insertuser"] input[type="submit"],
 #ttContent input[type="submit"] {
-    box-shadow: 0px 1px 0px 0px #ffffff inset;
-    background: -moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100%);
-    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 2px 3px;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 1px 1px 0px #eee;
-    font-size: 11px;
-    margin: 0 1px;
-    cursor: pointer;
-    font-family: Lato;
+  box-shadow: 0 1px 0 0 #fff inset;
+  background: -moz-linear-gradient(center, top, #fff 5%, #f6f6f6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fff), color-stop(1, #f6f6f6));
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 2px 3px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #eee;
+  font-size: 11px;
+  margin: 0 1px;
+  cursor: pointer;
+  font-family: Lato;
 }
 
 input[type="submit"]:hover,
@@ -110,94 +108,89 @@ input[type="submit"]:hover,
 .framemapbg br + a[href$="logout.php"] + br + a:hover,
 form[action="friends.php?action=insertuser"] input[type="submit"]:hover,
 #ttContent input[type="submit"]:hover {
-    background: -moz-linear-gradient( center top, #f6f6f6 5%, #ffffff 100%);
-    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background: -moz-linear-gradient(center, top, #f6f6f6 5%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #fff));
 }
 
 input[type="submit"] {
-    margin-top: 3px;
+  margin-top: 3px;
 }
-
 
 /* Logout-Screen */
 
 .framemapbg br + a[href$="logout.php"],
 .framemapbg br + a[href$="logout.php"] + br + a {
-    width: 75px;
-    font-weight: normal;
-    margin-top: 6px;
+  width: 75px;
+  font-weight: normal;
+  margin-top: 6px;
 }
 
 .framemapbg br + a[href$="logout.php"] {
-    color: #0a0;
+  color: #0a0;
 }
 
 .framemapbg br + a[href$="logout.php"] + br + a {
-    color: #d00;
+  color: #d00;
 }
 
-
 /* /Logout-Screen */
-
 
 /* > Lebenspunkte & Erweitere Anzeige */
 
 .healthok,
 .valueincreased {
-    color: #27ae60;
+  color: #27ae60;
 }
 
 .healthcritical {
-    color: #c0392b;
+  color: #c0392b;
 }
 
 .healthmed {
-    color: #d35400;
+  color: #d35400;
 }
-
 
 /* JS-Tooltips */
 
 #ttContainer table {
-    border-collapse: separate !important;
-    border: 0px solid transparent !important;
+  border-collapse: separate !important;
+  border: 0 solid transparent !important;
 }
 
 #ttCaption {
-    background-color: #fff !important;
-    border: 1px solid #777 !important;
-    border-radius: 4px 4px 0 0 !important;
-    border-bottom: 1px solid #777 !important;
-    color: #333 !important;
-    text-align: center;
-    background-image: url(images/br2.png) !important;
+  background-color: #fff !important;
+  border: 1px solid #777 !important;
+  border-radius: 4px 4px 0 0 !important;
+  border-bottom: 1px solid #777 !important;
+  color: #333 !important;
+  text-align: center;
+  background-image: url(images/br2.png) !important;
 }
 
 #ttContent {
-    background: #f1f5fb url(images/noise.png) left top repeat-x !important;
-    border: 1px solid #777 !important;
-    border-top: 0 !important;
-    border-radius: 0 0 4px 4px !important;
-    color: #222 !important;
+  background: #f1f5fb url(images/noise.png) left top repeat-x !important;
+  border: 1px solid #777 !important;
+  border-top: 0 !important;
+  border-radius: 0 0 4px 4px !important;
+  color: #222 !important;
 }
 
 #ttContent img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
-
 
 /* FL-Tooltip */
 
 #ttCaption img[src$="close.gif"] {
-    display: inline-block;
-    width: 0px;
-    height: 10px;
-    background: url(images/rcsmall.png);
-    background-repeat: no-repeat;
-    margin-top: 3px;
-    padding-right: 10px;
-    overflow: hidden;
+  display: inline-block;
+  width: 0;
+  height: 10px;
+  background: url(images/rcsmall.png);
+  background-repeat: no-repeat;
+  margin-top: 3px;
+  padding-right: 10px;
+  overflow: hidden;
 }
 
 #ttContent textarea,
@@ -212,78 +205,73 @@ form[action="friends.php?action=insertuser"] input[name="username"],
 .framemainbg input[name="name"][type="text"][id="name"][size="30"][maxlength="30"],
 /* Clantelep. */
 .frameitembg textarea[name="tele_msg"] {
-    width: 100%;
+  width: 100%;
 }
 
 textarea,
 input[type="text"],
 input:not([type]) {
-    border: 1px solid rgba(0, 0, 0, .2);
-    padding: 3px;
-    font-family: Lato;
-    font-size: 13px;
-    background: #fefefe;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 3px;
+  font-family: Lato;
+  font-size: 13px;
+  background: #fefefe;
 }
 
 .frameitembg textarea {
-    height: 50%;
+  height: 50%;
 }
-
 
 /* Inventar - Status */
 
 .framemainbg,
 .framemainbg td {
-    color: #222;
+  color: #222;
 }
-
 
 /* FLÜSTERN */
 
 .listusersrow img[src$="blase.gif"],
 .friendlist img[src$="blase.gif"] {
-    display: none;
+  display: none;
 }
 
-a[href^="main.php?action=whisperuser&act_user_id="]:after {
-    content: "\f075";
+a[href^="main.php?action=whisperuser&act_user_id="]::after {
+  content: "\f075";
 }
 
-.framemainbg a[href^="chatform.php?action=whisperuser&act_user_id="]:after {
-    content: "\f075";
+.framemainbg a[href^="chatform.php?action=whisperuser&act_user_id="]::after {
+  content: "\f075";
 }
-
 
 /* /FLÜSTERN */
-
 
 /* GROUP */
 
 img[src$="group.gif"],
 img[src$="group2.gif"] {
-    display: none;
+  display: none;
 }
 
-a[href^="fight.php?action=groupinvite&act_user_id="]:after {
-    content: "\f0c0";
+a[href^="fight.php?action=groupinvite&act_user_id="]::after {
+  content: "\f0c0";
 }
-
 
 /* /GROUP */
 
-a[href^="chatform.php?action=whisperuser&act_user_id="]:after,
-a[href^="chatform.php?action=whisperuser&act_user_id="]:hover:after,
-a[href^="main.php?action=whisperuser&act_user_id="]:after,
-a[href^="main.php?action=whisperuser&act_user_id="]:hover:after,
-a[href^="fight.php?action=groupinvite&act_user_id="]:after,
-a[href^="fight.php?action=groupinvite&act_user_id="]:hover:after,
-a[href^="fight.php?action=groupjoinrand"]:before,
-a[href^="fight.php?action=groupjoinrand"]:hover:before {
-    color: #666;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    line-height: .9;
+a[href^="chatform.php?action=whisperuser&act_user_id="]::after,
+a[href^="chatform.php?action=whisperuser&act_user_id="]:hover::after,
+a[href^="main.php?action=whisperuser&act_user_id="]::after,
+a[href^="main.php?action=whisperuser&act_user_id="]:hover::after,
+a[href^="fight.php?action=groupinvite&act_user_id="]::after,
+a[href^="fight.php?action=groupinvite&act_user_id="]:hover::after,
+a[href^="fight.php?action=groupjoinrand"]::before,
+a[href^="fight.php?action=groupjoinrand"]:hover::before {
+  color: #666;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 0.9;
 }
 
 a[href^="chatform.php?action=whisperuser&act_user_id="],
@@ -294,490 +282,473 @@ a[href^="fight.php?action=groupinvite&act_user_id="],
 a[href^="fight.php?action=groupinvite&act_user_id="]:hover,
 a[href^="fight.php?action=groupjoinrand"],
 a[href^="fight.php?action=groupjoinrand"]:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .friendlist img[src$="close.gif"] {
-    display: inline-block;
-    width: 0px;
-    height: 10px;
-    background: url(images/rcsmall.png);
-    background-repeat: no-repeat;
-    margin-top: 1px;
-    padding-left: 10px;
-    overflow: hidden;
+  display: inline-block;
+  width: 0;
+  height: 10px;
+  background: url(images/rcsmall.png);
+  background-repeat: no-repeat;
+  margin-top: 1px;
+  padding-left: 10px;
+  overflow: hidden;
 }
 
-.friendlist a[href="#"][onclick*="tt(event,"]:after {
-    content: attr(title);
-    position: absolute;
-    left: 501px;
-    right: 5px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-bottom: 0;
-    background: url(images/white.png);
-    padding: 1px;
-    color: #333;
-    font-weight: normal;
-    margin-top: -2px;
-    height: 17px;
-    overflow: hidden;
+.friendlist a[href="#"][onclick*="tt(event,"]::after {
+  content: attr(title);
+  position: absolute;
+  left: 501px;
+  right: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  background: url(images/white.png);
+  padding: 1px;
+  color: #333;
+  font-weight: normal;
+  margin-top: -2px;
+  height: 17px;
+  overflow: hidden;
 }
 
-.friendlist tr:first-of-type a[href="#"][onclick^="tt"]:after {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+.friendlist tr:first-of-type a[href="#"][onclick^="tt"]::after {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
-.friendlist tr:last-of-type a[href="#"][onclick^="tt"]:after {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom: 1px solid #ccc;
-    height: 16px;
+.friendlist tr:last-of-type a[href="#"][onclick^="tt"]::after {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: 1px solid #ccc;
+  height: 16px;
 }
 
-.friendlist a[href="#"][onclick*="tt(event,"][title="Kommentar verfassen"]:after {
-    content: "Kein Kommentar festgelegt...";
-    color: #bbb;
-    font-style: italic;
+.friendlist a[href="#"][onclick*="tt(event,"][title="Kommentar verfassen"]::after {
+  content: "Kein Kommentar festgelegt...";
+  color: #bbb;
+  font-style: italic;
 }
 
-.friendlist + br + p + .friendlist a[href="#"][onclick*="tt(event,"]:after {
-    left: 503px
+.friendlist + br + p + .friendlist a[href="#"][onclick*="tt(event,"]::after {
+  left: 503px;
 }
-
 
 /* Doppelte brs bei Itembeschreibungen verhindern, z.B Hasenfell */
 
 .listplaceitemsrow br + br + br {
-    display: none;
+  display: none;
 }
-
 
 /* Freundesliste */
 
 .friendlist {
-    border-collapse: separate;
-    border-spacing: 0px;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 .friendlist tr td {
-    border-bottom: 1px solid #ccc;
-    padding: 1px;
-    margin-top: 3px;
-    background: url(images/white.png)
+  border-bottom: 1px solid #ccc;
+  padding: 1px;
+  margin-top: 3px;
+  background: url(images/white.png);
 }
 
 .friendlist tr td:first-of-type {
-    border-left: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 .friendlist tr td:last-of-type {
-    border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 .friendlist tr:first-of-type td {
-    border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc;
 }
 
 .friendlist tr:first-of-type td:first-of-type {
-    border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
 }
 
 .friendlist tr:first-of-type td:last-of-type {
-    border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .friendlist tr:last-of-type td:first-of-type {
-    border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .friendlist tr:last-of-type td:last-of-type {
-    border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
 
 /* Hack, damit die erste Zelle auch angezeigt wird, wenn User in einer Gruppe */
 
-.friendlist:first-of-type tr td:first-of-type:after {
-    content: " ";
+.friendlist:first-of-type tr td:first-of-type::after {
+  content: " ";
 }
 
 form[action="friends.php?action=insertuser"] input[name="username"] {
-    width: 300px;
+  width: 300px;
 }
 
 p.maincaption {
-    text-shadow: 1px 1px 5px #888;
-    font-size: 25px;
-    padding: 5px;
+  text-shadow: 1px 1px 5px #888;
+  font-size: 25px;
+  padding: 5px;
 }
 
 p.maincaption + br {
-    display: none;
+  display: none;
 }
-
 
 /* Kampfberichte */
 
 img[src$="sieg.jpg"],
 img[src$="niederlage.jpg"] {
-    width: 37px;
-    height: 30px;
+  width: 37px;
+  height: 30px;
 }
-
 
 /* Archiv */
 
 img[src$="brief.jpg"] {
-    display: inline-block;
-    width: 0px;
-    height: 14px;
-    background: url(images/brief.png);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    padding-left: 16px;
-    overflow: hidden;
-    margin-right: 5px;
+  display: inline-block;
+  width: 0;
+  height: 14px;
+  background: url(images/brief.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-left: 16px;
+  overflow: hidden;
+  margin-right: 5px;
 }
 
 img[src$="brief.jpg"] + br {
-    display: none;
+  display: none;
 }
 
 p.maincaption2 {
-    font-size: 15px;
-    padding: 3px;
+  font-size: 15px;
+  padding: 3px;
 }
 
 p.maincaption2 a {
-    text-shadow: 0px 0px 0px #888;
+  text-shadow: 0 0 0 #888;
 }
 
 a[href="main.php?action=archive&mode=show#newest_msg"] ~ p.maincaption2 {
-    margin-top: 15px;
-    padding: 3px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 13px;
+  margin-top: 15px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 13px;
 }
-
 
 /* Errungenschaften */
 
 .itemlistcaption[style="width: 550px"],
 .listcaption[style="width: 550px"] {
-    border-radius: 0 0 !important;
-    background-color: #2980b9 !important;
-    border: 1px solid rgba(0, 0, 0, .2) !important;
-    background-image: none !important;
-    padding: 4px 8px !important;
-    color: #eee !important;
-    font-size: 13px;
-    font-weight: bold;
+  border-radius: 0 0 !important;
+  background-color: #2980b9 !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  background-image: none !important;
+  padding: 4px 8px !important;
+  color: #eee !important;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .itemlistcaption[style="width: 550px"],
 .listcaption[style="width: 550px"],
 .itemlistcaption[style="width: 550px"] + .listrow,
 .listcaption[style="width: 550px"] + .listrow {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .itemlistcaption[style="width: 550px"] a,
 .listcaption[style="width: 550px"] a,
 .itemlistcaption[style="width: 550px"] a:hover,
 .listcaption[style="width: 550px"] a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .itemlistcaption[style="width: 550px"] + .listrow,
 .listcaption[style="width: 550px"] + .listrow {
-    background-color: #eee !important;
-    border: 1px solid rgba(0, 0, 0, .2) !important;
-    border-bottom: 0;
-    padding: 4px 4px !important;
+  background-color: #eee !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-bottom: 0;
+  padding: 4px 4px !important;
 }
 
 .itemlistcaption[style="width: 550px"] + .listrow img,
 .listcaption[style="width: 550px"] + .listrow img {
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .itemlistcaption[style="width: 550px"] + .listrow td,
 .listcaption[style="width: 550px"] + .listrow td {
-    color: #222 !important;
-    font-size: 12px;
+  color: #222 !important;
+  font-size: 12px;
 }
 
 .listcaption[style="width: 550px"] img {
-    display: none;
+  display: none;
 }
 
 .listcaption[style="width: 550px"] a,
 .listcaption[style="width: 550px"] a:hover {
-    text-decoration: none;
-    font-size: 0;
-    display: inline-block;
+  text-decoration: none;
+  font-size: 0;
+  display: inline-block;
 }
 
-.listcaption[style="width: 550px"] a:after {
-    font-size: 15px;
-    line-height: 13px;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
+.listcaption[style="width: 550px"] a::after {
+  font-size: 15px;
+  line-height: 13px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.listcaption[style="width: 550px"] a[title$="ein)"]:after {
-    content: "\f06e";
-    color: #fff;
+.listcaption[style="width: 550px"] a[title$="ein)"]::after {
+  content: "\f06e";
+  color: #fff;
 }
 
-.listcaption[style="width: 550px"] a[title$="aus)"]:after {
-    content: "\f070";
-    color: #fa9;
+.listcaption[style="width: 550px"] a[title$="aus)"]::after {
+  content: "\f070";
+  color: #fa9;
 }
-
 
 /* Unterkünfte */
-
 
 /* > Schwarze Felder "sichtbar" machen */
 
 td[style$="/map/black.jpg"] a:not(.nocango),
 td[style$="/map/u/Einzelbilder/002.jpg"] a,
 td[style$="/map/ixi19.jpg"] a {
-    width: 50px;
-    height: 50px;
-    display: block;
-    background-image: url(images/uk.png) !important;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-image: url(images/uk.png) !important;
 }
-
 
 /* Übersichtskarte */
 
-img[src$="/map/black.jpg"] + div:after,
-img[src$="/map/u/Einzelbilder/002.jpg"] + div:after,
-img[src$="/map/ixi19.jpg"] + div:after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    display: block;
-    background-image: url(images/uk.png) !important;
-    background-size: 25px 25px;
-    position: absolute;
-    left: 0;
-    top: 0;
+img[src$="/map/black.jpg"] + div::after,
+img[src$="/map/u/Einzelbilder/002.jpg"] + div::after,
+img[src$="/map/ixi19.jpg"] + div::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-image: url(images/uk.png) !important;
+  background-size: 25px 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-
 
 /* > Bau-Menü */
 
 .builtcaption,
 .editcaption,
 .visitcaption {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    color: transparent;
-    font-size: 0;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: transparent;
+  font-size: 0;
 }
 
 .builtcaption a,
 .editcaption a,
 .visitcaption a {
-    box-shadow: 0px 1px 0px 0px #ffffff inset;
-    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
-    background: -moz-linear-gradient( center top, #ffffff 5%, #f6f6f6 100%);
-    display: inline-block;
-    color: #666 !important;
-    padding: 3px 5px;
-    text-decoration: none;
-    text-shadow: 1px 1px 0px #eee;
-    font-size: 11px;
-    margin: 0 1px;
+  box-shadow: 0 1px 0 0 #fff inset;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fff), color-stop(1, #f6f6f6));
+  background: -moz-linear-gradient(center, top, #fff 5%, #f6f6f6 100%);
+  display: inline-block;
+  color: #666 !important;
+  padding: 3px 5px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #eee;
+  font-size: 11px;
+  margin: 0 1px;
 }
 
 .builtcaption a:hover,
 .editcaption a:hover,
 .visitcaption a:hover {
-    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
-    background: -moz-linear-gradient( center top, #f6f6f6 5%, #ffffff 100%);
-    color: #333 !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #fff));
+  background: -moz-linear-gradient(center, top, #f6f6f6 5%, #fff 100%);
+  color: #333 !important;
 }
-
 
 /* > Kristallschale - Bilder verkleinern */
 
 .uplantimg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
-
 /* > gepresste Zauberkugel */
-
 
 /* > > Bank aller Wesen */
 
 .frameitembg select[name="z_pos_id"] option[value="73"] {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 /* ..... */
 
 .personlistcaption:not([style*="width: 550px"]),
 .itemlistcaption:not([style*="width: 550px"]) {
-    display: none;
+  display: none;
 }
 
 table.areadescription + br,
 table.areadescription + br + table + br,
 table.areadescription + br + table + br + table + br {
-    display: none;
+  display: none;
 }
-
 
 /* WERKSTATT */
 
 div.uwork br:first-of-type + br {
-    display: none;
+  display: none;
 }
 
 div.uwork + br[style="clear: both;"] + br {
-    display: none;
+  display: none;
 }
-
 
 /* /WERKSTATT */
 
 .tutorial {
-    border: 1px solid #ccc !important;
-    background-color: #eee !important;
-    -moz-border-radius: 8px !important;
-    -webkit-border-radius: 8px !important;
-    border-radius: 8px !important;
-    color: #333;
+  border: 1px solid #ccc !important;
+  background-color: #eee !important;
+  -moz-border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  border-radius: 8px !important;
+  color: #333;
 }
 
 .tutorial legend {
-    border: 1px solid #ccc !important;
-    background-color: #eee !important;
-    -moz-border-radius: 3px !important;
-    -webkit-border-radius: 3px !important;
-    border-radius: 3px !important;
-    color: #333;
-    padding: 2px;
+  border: 1px solid #ccc !important;
+  background-color: #eee !important;
+  -moz-border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  border-radius: 3px !important;
+  color: #333;
+  padding: 2px;
 }
 
 .framemapbg td > a {
-    display: inline-block;
-    position: relative;
-    width: 50px;
-    height: 50px;
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
 
-.framemapbg td > a:after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    color: #000;
-    font-weight: normal;
-    background: rgba(255, 255, 255, .75);
-    border: 0px solid #eee;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .8);
-    font-size: 10px;
-    text-align: center;
-    padding: 2px 0;
+.framemapbg td > a::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #000;
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.75);
+  border: 0 solid #eee;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.8);
+  font-size: 10px;
+  text-align: center;
+  padding: 2px 0;
 }
 
 a[href="main.php?arrive_eval=getmission"],
 a[href="main.php?finish=1"] {
-    display: block;
-    width: 200px;
-    height: 40px;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid rgba(0, 0, 0, .2);
-    text-align: center;
-    color: #fff !important;
-    font-size: bigger;
-    background: #27ae60;
+  display: block;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff !important;
+  font-size: bigger;
+  background: #27ae60;
 }
 
 a[href="main.php?arrive_eval=getmission"]:hover,
 a[href="main.php?finish=1"]:hover {
-    color: #fff !important;
-    background: #2ecc71;
+  color: #fff !important;
+  background: #2ecc71;
 }
 
-.framebannerbg:before {
-    position: absolute;
-    white-space: pre;
-    left: 0;
-    top: -5px;
-    width: 270px;
-    height: 50px;
-    font-size: 11px;
-    display: block;
-    padding: 10px;
-    border: 3px solid #eee;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    visibility: hidden;
+.framebannerbg::before {
+  position: absolute;
+  white-space: pre;
+  left: 0;
+  top: -5px;
+  width: 270px;
+  height: 50px;
+  font-size: 11px;
+  display: block;
+  padding: 10px;
+  border: 3px solid #eee;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  visibility: hidden;
 }
-
 
 /* Werbung */
 
 .framebannerbg table td:first-of-type {
-    display: none;
+  display: none;
 }
 
 .framebannerbg table td:last-of-type {
-    position: absolute;
-    right: 15px;
-    top: 8px;
+  position: absolute;
+  right: 15px;
+  top: 8px;
 }
 
 #ItemFrameItem a[href^="item.php?action=fastspell&spellslot"]:not([href$="mode=delete"]) {
-    display: block;
-    margin: -18px -6px 0 -5px;
-    background: #f5f5f5;
-    padding: 2px 8px;
-    border-bottom: 1px solid rgba(0, 0, 0, .1);
-    z-index: 10;
-    position: relative;
+  display: block;
+  margin: -18px -6px 0 -5px;
+  background: #f5f5f5;
+  padding: 2px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  position: relative;
 }
 
 #ItemFrameItem a[href^="item.php?action=fastspell&spellslot"]:not([href$="mode=delete"]):first-of-type {
-    margin-top: 0;
-    border-top: 1px solid rgba(0, 0, 0, .1);
+  margin-top: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 #ItemFrameItem a[href^="item.php?action=fastspell&spellslot"]:not([href$="mode=delete"]):last-of-type {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-#fssel1:after,
-#fssel2:after,
-#fssel3:after,
-#fssel4:after,
-#fssel5:after,
-#fssel6:after,
-#fssel7:after,
-#fssel8:after,
-#fssel9:after {
-    display: inline-block;
-    margin-left: 8px;
-    content: attr(title);
+#fssel1::after,
+#fssel2::after,
+#fssel3::after,
+#fssel4::after,
+#fssel5::after,
+#fssel6::after,
+#fssel7::after,
+#fssel8::after,
+#fssel9::after {
+  display: inline-block;
+  margin-left: 8px;
+  content: attr(title);
 }
 
 #x-467y-472 a[href$="main.php?go=exit"] {
-    display: inline-block;
-    margin-top: 40px;
+  display: inline-block;
+  margin-top: 40px;
 }
