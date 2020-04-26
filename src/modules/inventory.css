@@ -345,3 +345,12 @@
 }
 
 /* /SPECIAL & STATUS */
+
+/*
+ * Hide ability indicator
+ * https://forum.freewar.de/viewtopic.php?f=8&t=59680
+ */
+
+a[href="ability.php"] > span {
+  display: none !important;
+}
