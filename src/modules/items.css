@@ -8,10 +8,22 @@
   text-align: center;
   width: calc(100% + 12px);
   margin: 0 -6px;
+  color: #333 !important;
+  font-size: 12px !important;
 }
 
 #filterrow b {
   padding: 0;
+}
+
+#filterrow br {
+  display: inline !important;
+}
+
+#filterrow a[href^="item.php?action=filtersel&filtercat"] {
+  display: inline !important;
+  font-size: 12px !important;
+  color: #2980b9 !important;
 }
 
 #searcht {
