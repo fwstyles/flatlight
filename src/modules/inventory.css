@@ -172,6 +172,11 @@
   font-size: 12px;
 }
 
+#listrow_group a[href="clanmenu.php?action=groupmenu"]::before {
+  content: " ";
+  white-space: pre;
+}
+
 /* /GROUP */
 
 /* LIFEPOINTS */
