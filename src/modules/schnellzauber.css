@@ -115,15 +115,28 @@ table[id^="fastspell"]:not(#fastspell) a:hover {
   color: #08f !important;
 }
 
-table[id^="fastspell"]:not(#fastspell) img[src$="close.gif"],
-#close1 img[src$="close.gif"],
-#close2 img[src$="close.gif"] {
+table[id^="fastspell"]:not(#fastspell) a img {
+  display: none;
+}
+
+table[id^="fastspell"]:not(#fastspell) a[href^="item.php?action=watch"]::before,
+table[id^="fastspell"]:not(#fastspell) a[href^="item.php?action=fastspell"]::before {
+  margin-top: 1px;
   display: inline-block;
-  width: 0;
-  height: 10px;
-  background: url(images/rcsmall.png);
-  background-repeat: no-repeat;
-  margin-top: 2px;
-  padding-left: 10px;
-  overflow: hidden;
+  color: #666;
+  font-size: 12px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+table[id^="fastspell"]:not(#fastspell) a[href^="item.php?action=watch"]::before {
+  content: "\f06e";
+  margin-right: 2px;
+}
+
+table[id^="fastspell"]:not(#fastspell) a[href^="item.php?action=fastspell"]::before {
+  content: "\f00d";
+  color: #e50;
 }
